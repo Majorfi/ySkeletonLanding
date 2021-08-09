@@ -19,8 +19,8 @@ function	YEnv() {
 		<section className={'mt-14 pt-14 w-full md:px-12 px-4 space-y-12 mb-64 z-10 relative'}>
 			<div className={'flex justify-center items-center flex-col'}>
 
-				<div className={'hidden lg:block'}><Image unoptimized src={process.env.IMAGE} width={240} height={240} quality={95} loading={'eager'} /></div>
-				<div className={'block lg:hidden'}><Image unoptimized src={process.env.IMAGE} width={120} height={120} quality={95} loading={'eager'} /></div>
+				<div className={'hidden lg:block'}><Image unoptimized={!(process.env.IMAGE || '')?.startsWith('/')} src={process.env.IMAGE} width={240} height={240} quality={95} loading={'eager'} /></div>
+				<div className={'block lg:hidden'}><Image unoptimized={!(process.env.IMAGE || '')?.startsWith('/')} src={process.env.IMAGE} width={120} height={120} quality={95} loading={'eager'} /></div>
 
 				<div className={'max-w-4xl text-center mt-4 lg:mt-10'}>
 					<h1 className={'text-4xl lg:text-6xl font-bold text-gray-800'}>{process.env.TITLE}</h1>
