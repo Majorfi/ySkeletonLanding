@@ -1,0 +1,223 @@
+/*******************************************************************************
+** @Author:					Thomas Bouder <Tbouder>
+** @Email:					Tbouder@protonmail.com
+** @Date:					Friday 16 October 2020 - 10:36:26
+** @Filename:				Default.css
+**
+** @Last modified by:		Tbouder
+*******************************************************************************/
+
+html {
+	background-color: rgba(248, 250, 252, 1);
+}
+* {
+	scroll-behavior: smooth;
+}
+
+#__next {
+	width: 100%;
+	height: 100%
+}
+
+::placeholder {
+	color: #C5C6C7 !important;
+}
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+	color: #C5C6C7 !important;
+}
+
+.whitePlaceholder {
+	caret-color: #FFFFFF !important;
+}
+.whitePlaceholder::placeholder {
+	color: #FFFFFF !important;
+	opacity: 0.5;
+}
+.whitePlaceholder:-ms-input-placeholder,
+.whitePlaceholder::-ms-input-placeholder {
+	color: #FFFFFF !important;
+	opacity: 0.5;
+}
+
+/******************************************************************************
+**	Styled button style
+******************************************************************************/
+.button {
+	will-change: transform, opacity;
+	contain: content;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	transition: 0.1s;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 4px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+}
+
+/******************************************************************************
+**	Styled input style
+******************************************************************************/
+input {
+	background-color: transparent;
+	width: 100%;
+    border-top-style: initial;
+    border-bottom-style: initial;
+    border-left-style: initial;
+    border-right-style: initial;
+    border-top-color: initial;
+    border-bottom-color: initial;
+    border-left-color: initial;
+    border-right-color: initial;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    line-height: 17px;
+    caret-color: rgba(30, 41, 59, 1);
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+	padding: 0;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+input:focus {
+	box-shadow: none;
+	outline: none;
+	border: none;
+}
+
+/******************************************************************************
+**	Input remove stepper
+******************************************************************************/
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+/******************************************************************************
+**	TAILWIND CSS ++
+******************************************************************************/
+.transition-all {
+	transition-duration: 150ms;
+}
+.animation-delay-500 {
+	animation-delay: 1000ms !important;
+}
+.text-xxs {
+	font-size: 10px;
+	line-height: 12px;
+}
+.text-ybase {
+	font-family: Roboto;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 16px;
+	letter-spacing: 0em;
+}
+
+.text-ylarge {
+	font-family: Roboto;
+	font-size: 24px;
+	font-style: normal;
+	line-height: 32px;
+	letter-spacing: 0em;
+	text-align: center;
+}
+
+
+.text-yerror {
+	font-family: SF Pro Display;
+	font-size: 14px;
+	font-style: normal;
+	line-height: 17px;
+	letter-spacing: 0em;
+}
+
+
+*, ::before, ::after {
+    --tw-ring-color: transparent !important;
+}
+
+.variant-petit-caps {
+	font-variant: all-petite-caps;
+}
+
+.placeholder-0::before {
+	content: "0000000000";
+}
+.placeholder-1::before {
+	content: "000000000";
+}
+.placeholder-2::before {
+	content: "00000000";
+}
+.placeholder-3::before {
+	content: "0000000";
+}
+.placeholder-4::before {
+	content: "000000";
+}
+.placeholder-5::before {
+	content: "00000";
+}
+.placeholder-6::before {
+	content: "0000";
+}
+.placeholder-7::before {
+	content: "000";
+}
+.placeholder-8::before {
+	content: "00";
+}
+.placeholder-9::before {
+	content: "0";
+}
+
+::-webkit-scrollbar-track {
+    margin-bottom: 124px;
+	height: 8px;
+	max-height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	border-radius: 8px;
+	background-color: #FFFFFF;
+}
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+.animate-lateralBounce {
+    animation: lateraltBounce 2s infinite;
+}
+
+@keyframes lateraltBounce {
+	0%, 100% {
+    	transform: translateX(-25%);
+    	animation-timing-function: cubic-bezier(0.8,0,1,1);
+	}
+	50% {
+    	transform: none;
+    	animation-timing-function: cubic-bezier(0,0,0.2,1);
+	}
+}
+
+.flicking-pagination-bullet-active {
+	background-color: #00A3FF !important;
+}
