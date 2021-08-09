@@ -28,7 +28,7 @@ Click `Environnment Variables` to configure your project. You will need to setup
 - `APP`: URL to your actual app, used to redirect when the user clicks on the button.
 - `REPOSITORY`: Link to the github repository.
 - `CONTRACT`: Link to the contract (on etherscan).
-- `CREDITS`: Hey, the authors deserve some credits !
+- `CREDITS`: Hey, the authors deserve some credits ! Note: this could be some Markdown !
 
 Here is an example :
 ```
@@ -41,7 +41,7 @@ IMAGE="/ecosystem/yBowswap.png"
 APP="https://bowswap.finance"
 REPOSITORY="https://github.com/pandadefi/y-crv-metapool-swapper"
 CONTRACT="https://etherscan.io/address/0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e"
-CREDITS="By Ivan, Panda, Facu and Major with 💙"
+CREDITS="By Ivan, [Panda](https://twitter.com/pandabuild), [Facu](https://twitter.com/fameal) and [Major](https://twitter.com/TBouder) with 💙"
 ```
 
 ## 3. Wait for the deploy
