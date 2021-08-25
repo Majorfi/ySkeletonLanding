@@ -1,4 +1,5 @@
 const colors = require('tailwindcss/colors');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
 	purge: [
@@ -10,6 +11,9 @@ module.exports = {
 		ringColor: false,
 	},
 	theme: {
+		fontFamily: {
+			sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+		},
 		colors: {
 			gray: colors.coolGray,
 			green: colors.green,
@@ -19,6 +23,8 @@ module.exports = {
 			error: '#FF005E',
 			pending: '#FFB800',
 			success: '#A5DF00',
+			yblue: '#1E6EDF',
+			'yblue-hover': '#3B86F0',
 			blue: {
 				300: '#32B5FF',
 				400: '#00A3FF',
@@ -35,9 +41,23 @@ module.exports = {
 			}
 		},
 		extend: {
-			boxShadow: {
-				base: '0 10px 30px rgb(209 213 223 / 50%)'
+			rotate: {
+				60: '60deg',
 			},
+			inset: {
+				'-18': '-4.5rem',
+			},
+			blur: {
+				xs: '2px',
+				md: '3px',
+				lg: '10px'
+			},
+			width: {
+				150: '37.5rem'
+			},
+			height: {
+				104: '26rem'
+			}
 		},
 	}
 };
